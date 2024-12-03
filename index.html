@@ -16,11 +16,11 @@
   <body>
     <header>
       <div id="menu-drop-down">
-        <div id="menu-logo">
-          <img src="./image/Icon/menu.svg" alt="Menu" id="menu" />
-        </div>
         <nav aria-label="Menu naviguation principal">
-          <ul role="menu">
+          <div id="menu-logo">
+            <img src="./image/Icon/menu.svg" alt="Menu" id="menu" />
+          </div>
+          <ul role="menu" id="menu-principal">
             <li
               role="menuitem"
               aria-haspopup="false"
@@ -54,7 +54,7 @@
               >
             </li>
             <li role="menu" id="produits-menuitem" aria-haspopup="true">
-              <a href="">Nos produits</a>
+              <a href="">Nos produits <span style="font-size: 12px; margin-left: 3px;">&#x25BC</span></a>
               <ul role="menu" id="menu-produits">
                 <li role="menuitem" aria-haspopup="false">
                   <a href="">Tous nos produits</a>
@@ -91,11 +91,13 @@
         </a>
       </div>
     </header>
-    <main id="main-accueil">
+    <main >
+      <h2>Bienvenue</h2>
+      <div id="main-accueil">
       <div id="accueil-main-info">
-        <h2>Bienvenue</h2>
+        <h3>Notre objectif</h3>
         <p>
-          Notre objectif, vous permettre d’accéder à de nombreux
+          Vous permettre d’accéder à de nombreux
           livres,vêtements, jouets et accessoires pour enfants à des prix
           abordables.<br />
           Nous vous proposons une large gamme de produits neufs ou d’occasion,
@@ -117,6 +119,7 @@
       <div id="accueil-main-image">
         <img id="main-image" src="./image/accueil.jpg" alt="Image d'accueil" />
       </div>
+    </div>
     </main>
     <footer>
       <h3>Nous contacter :</h3>
