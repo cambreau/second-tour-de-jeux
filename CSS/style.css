@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Gowun+Batang:wght@400;700&display=swap");
 @import "header.css";
 @import "main.css";
+@import "footer.css";
 
 :root {
   --primary-color: #d94862;
@@ -201,45 +202,4 @@ main button:hover {
 #main-validation img {
   width: 500px;
   height: auto;
-}
-
-/* ***FOOTER*** */
-footer {
-  border-top: 2px solid var(--second-color);
-  display: block;
-  padding: 13px 45px 5px 45px;
-}
-
-footer h3 {
-  font-family: var(--decorative-font);
-  color: var(--primary-color);
-  margin: 0px;
-  /* Permet de supprimer les marges par défaut. */
-}
-
-#container-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-#container-footer p {
-  margin: 0px;
-  /* Permet de supprimer les marges par défaut. */
-  font-size: small;
-}
-
-#contact-info {
-  display: flex;
-  margin: 10px 0px;
-}
-
-#contact-info img {
-  width: 1.5rem;
-}
-
-#contact-info a {
-  text-decoration: none;
-  margin: 0px 5px;
-  padding-left: 10px;
 }

@@ -131,3 +131,12 @@ main button {
     font-size: 15px;
   }
 }
+
+/* ***A propos*** */
+
+#main-apropos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}

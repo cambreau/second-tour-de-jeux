@@ -9,6 +9,10 @@ header {
   align-items: center;
 }
 
+nav {
+  background-color: inherit;
+}
+
 /* ***MENU-DROPDOWN*** */
 #menu-drop-down {
   width: 200px;

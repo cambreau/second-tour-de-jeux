@@ -1,0 +1,32 @@
+footer {
+  border-top: 2px solid var(--second-color);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 13px 45px 5px 45px;
+}
+
+footer h3 {
+  font-family: var(--decorative-font);
+  color: var(--primary-color);
+}
+
+footer p {
+  font-size: small;
+}
+
+#contact-info {
+  display: flex;
+  margin: 10px 0px;
+}
+
+#contact-info img {
+  width: 1.5rem;
+}
+
+#contact-info a {
+  text-decoration: none;
+  margin: 0px 5px;
+  padding-left: 10px;
+}
