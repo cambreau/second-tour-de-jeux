@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Un second tour" />
+    <meta
+      name="keywords"
+      content="jeux, jouets, livres, vêtements, enfants, prix abordables, produits de qualité, neufs, d'occasion, bon état, prix attractifs, budget, un second tour de jeux"
+    />
+    <title>Nous contacter - Un second tour de jeux</title>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Gowun+Batang:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../CSS/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav aria-label="Menu naviguation principal">
+        <ul role="menu">
+          <li role="menuitem"><a href="../index.html">Page d'accueil</a></li>
+          <li role="menuitem">
+            <a href="../page-a-propos/a-propos.html">A propos de nous</a>
+          </li>
+          <li role="menuitem">
+            <a href="../page-produit/produit.html">Nos produits</a>
+          </li>
+          <li role="menuitem">
+            <a href="../page-nous-contacter/nous-contacter.html"
+              >Nous contacter</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div id="title">
+        <div id="logo">
+          <img src="../image/logo.svg" alt="Logo de l'entreprise" />
+        </div>
+        <h1>Un second tour de jeux</h1>
+      </div>
+      <a href="../validation/validation.html" id="bouton-validation">
+        Validation</a
+      >
+    </header>
+    <main id="main-contact">
+      <div id="container-formulaire">
+        <h2>Nous contacter</h2>
+        <p>
+          Vous pouvez nous contacter en complétant le formulaire ci-dessous :
+        </p>
+        <form action="nous-contacter.html" method="get">
+          <div id="nom-prenom">
+            <label for="nom">Nom :</label>
+            <input
+              id="nom"
+              type="text"
+              name="nom"
+              placeholder="Entrer votre nom"
+              required
+            />
+            <label for="prenom">Prenom :</label>
+            <input
+              id="prenom"
+              type="text"
+              name="prenom"
+              placeholder="Entrer votre prenom"
+              required
+            />
+          </div>
+          <label for="email">Adresse e-mail :</label>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            placeholder="ex: unSecondTourDeJeux@gmail.com"
+            required
+          />
+          <label for="telephone">Numéro de téléphone :</label>
+          <input
+            id="telephone"
+            type="tel"
+            name="telephone"
+            placeholder="ex: 514-999-9999"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+          />
+          <label for="message">Message :</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Entrer votre message ici"
+            rows="5"
+            cols="88"
+          ></textarea>
+          <button type="submit">Envoyer</button>
+        </form>
+      </div>
+      <div id="contact-image">
+        <img
+          src="../image/nous-contacter.png"
+          alt="Image d'un enfant qui lance un avion"
+        />
+      </div>
+    </main>
+    <footer>
+      <h3>Nous contacter :</h3>
+      <div id="container-footer">
+        <div id="contact-info">
+          <p>unSecondTourDeJeux@gmail.com</p>
+          <a href="https://www.facebook.com/" target="_blank">
+            <img src="../image/facebook.svg" alt="Facebook" />
+          </a>
+          <a href="https://www.instagram.com/" target="_blank">
+            <img src="../image/instagram.svg" alt="Instagram" />
+          </a>
+        </div>
+        <p>© 2024 Camille Breau</p>
+      </div>
+    </footer>
+  </body>
+</html>

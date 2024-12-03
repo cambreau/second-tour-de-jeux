@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Gowun+Batang:wght@400;700&display=swap");
+@import "header.css";
+@import "main.css";
+
+:root {
+  --primary-color: #d94862;
+  --second-color: #dcbda8;
+  --font-color: #3a3a3a;
+  --background-color: #fcfcfa;
+  --functionality-first-color: #8cc4bb;
+  --functionality-second-color: #b9c7ab;
+  --decorative-font: "Dancing Script", serif;
+  --general-font: "Gowun Batang", serif;
+}
+
+* {
+  /*  Le symbole * permet de cibler tous les les éléments d'une page. */
+  box-sizing: border-box;
+  margin: 0; /* Permet de supprimer les marges par défaut. */
+  padding: 0; /* Permet de supprimer les padding par défaut. */
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: var(--general-font);
+  color: var(--font-color);
+  display: flex;
+  flex-direction: column;
+}
+
+/* ***MAIN*** */
+
+/* ***Page a propos de nous*** */
+#main-a-propos {
+  display: flex;
+}
+
+#main-a-propos section h3 {
+  font-size: medium;
+}
+
+#main-a-propos article:first-child {
+  border-right: var(--second-color) solid 1px;
+  margin-right: 10px;
+  padding-right: 10px;
+}
+
+#main-a-propos section p {
+  margin: 0;
+  /* Permet de supprimer les marges par défaut. */
+}
+
+#main-a-propos img {
+  width: 1.5rem;
+  margin-right: 10px;
+  padding-bottom: 10px;
+}
+
+#texte-environement {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 3px;
+}
+
+#main-a-propos article:last-child {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ***Page nous contacter*** */
+
+#main-contact {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 0px 10px 200px;
+}
+
+label {
+  font-weight: bold;
+  margin: 10px 0px 0px 10px;
+}
+
+input {
+  width: 250px;
+  display: block;
+  margin: 10px;
+}
+
+textarea {
+  display: block;
+  margin: 10px;
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-style: italic;
+  color: #999;
+}
+
+main button:hover {
+  background-color: var(--functionality-first-color);
+  color: var(--background-color);
+}
+
+#nom-prenom {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+#contact-image img {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: 30px;
+}
+
+/* ***Produits*** */
+
+#main-produit {
+  width: 100%;
+  text-align: center;
+}
+
+#produits {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.produit {
+  width: 220px;
+  border: 1px solid var(--second-color);
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.produit h3 {
+  font-family: var(--decorative-font);
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 10px 0px;
+}
+
+.image-produit {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin: 10px 10px 0px 10px;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.description-produit {
+  width: 200px;
+  margin: 0px 0px 10px 25px;
+}
+
+.description-produit p {
+  font-size: small;
+  text-align: justify;
+  margin: 0px;
+  /* Permet de supprimer les marges par défaut. */
+}
+
+.description-produit p:last-child {
+  color: var(--primary-color);
+}
+
+.bouton {
+  display: flex;
+  justify-content: center;
+}
+
+.bouton img {
+  width: 40px;
+  height: auto;
+  border-radius: 50%;
+  margin: 0 5px 0 5px;
+}
+
+.bouton a :hover {
+  width: 60px;
+  border: 1px solid var(--primary-color);
+}
+
+/* ***VALIDATION*** */
+
+#main-validation img {
+  width: 500px;
+  height: auto;
+}
+
+/* ***FOOTER*** */
+footer {
+  border-top: 2px solid var(--second-color);
+  display: block;
+  padding: 13px 45px 5px 45px;
+}
+
+footer h3 {
+  font-family: var(--decorative-font);
+  color: var(--primary-color);
+  margin: 0px;
+  /* Permet de supprimer les marges par défaut. */
+}
+
+#container-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#container-footer p {
+  margin: 0px;
+  /* Permet de supprimer les marges par défaut. */
+  font-size: small;
+}
+
+#contact-info {
+  display: flex;
+  margin: 10px 0px;
+}
+
+#contact-info img {
+  width: 1.5rem;
+}
+
+#contact-info a {
+  text-decoration: none;
+  margin: 0px 5px;
+  padding-left: 10px;
+}
