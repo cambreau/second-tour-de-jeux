@@ -11,7 +11,12 @@ main h2 {
   color: var(--primary-color);
   margin: 15px 0 30px 0;
   text-align: center;
-  font-size: 30px;
+  font-size: 35px;
+}
+
+main h3 {
+  color: var(--primary-color);
+  font-size: 20px;
 }
 
 main button {
@@ -56,12 +61,6 @@ main button {
   align-items: center;
   justify-content: center;
   text-align: center;
-}
-
-#accueil-main-info h3 {
-  font-family: var(--decorative-font);
-  color: var(--primary-color);
-  font-size: 25px;
 }
 
 #accueil-main-info p {
@@ -134,9 +133,189 @@ main button {
 
 /* ***A propos*** */
 
-#main-apropos {
+#main-a-propos {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#main-a-propos article {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#main-a-propos article h3 {
+  margin: 20px 0;
+}
+
+#conteneur-iframe {
+  width: 100%;
+  max-width: 600px;
+  min-width: 300px;
+}
+
+iframe {
+  width: 100%;
+}
+
+/* ***Contact*** */
+#main-contact {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#container-formulaire {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  margin: 10px 0px 0px 10px;
+}
+
+input {
+  width: 250px;
+  display: block;
+  margin: 10px;
+}
+
+textarea {
+  display: block;
+  margin: 10px;
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-style: italic;
+  color: #999;
+}
+
+#bouton-form-contact {
+  background-color: var(--functionality-first-color);
+  color: var(--background-color);
+  border: solid 2px var(--functionality-first-color);
+}
+#bouton-form-contact:hover {
+  background-color: var(--background-color);
+  color: var(--functionality-first-color);
+}
+
+#nom-prenom {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+#contact-image img {
+  max-width: 600px;
+  padding: 20px;
+}
+
+#contact-image img {
+  width: 100%;
+  border-radius: 30%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 800px) {
+  #nom-prenom {
+    flex-direction: column;
+  }
+
+  input {
+    width: 200px;
+  }
+
+  textarea {
+    width: 200px;
+  }
+
+  #contact-image img {
+    padding: 30px 10px;
+  }
+
+  #container-formulaire {
+    align-items: center;
+  }
+
+  #bouton-form-contact {
+    margin-left: 10px;
+  }
+}
+
+/* ***Produits*** */
+#main-produit {
+  width: 100%;
+  text-align: center;
+}
+
+#produits {
+  width: 100%;
+  display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.produit {
+  width: 220px;
+  border: 1px solid var(--second-color);
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.produit h3 {
+  font-family: var(--decorative-font);
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 10px 0px;
+}
+
+.image-produit {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin: 10px 10px 0px 10px;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.description-produit {
+  width: 200px;
+  margin: 0px 0px 10px 25px;
+}
+
+.description-produit p {
+  font-size: small;
+  text-align: justify;
+  margin: 0px;
+  /* Permet de supprimer les marges par défaut. */
+}
+
+.description-produit p:last-child {
+  color: var(--primary-color);
+}
+
+.bouton {
+  display: flex;
+  justify-content: center;
+}
+
+.bouton img {
+  width: 40px;
+  height: auto;
+  border-radius: 50%;
+  margin: 0 5px 0 5px;
+}
+
+.bouton a :hover {
+  width: 60px;
+  border: 1px solid var(--primary-color);
 }

@@ -26,7 +26,7 @@
               aria-haspopup="false"
               class="menu-item-responsive"
             >
-              <a href="">
+              <a href="#">
                 <img src="../image/Icon/profil.svg" alt="Profil" />
               </a>
             </li>
@@ -35,17 +35,17 @@
               aria-haspopup="false"
               class="menu-item-responsive"
             >
-              <a href="">
+              <a href="#">
                 <img src="../image/Icon/mon-panier.svg" alt="Panier" />
               </a>
             </li>
             <li role="menuitem" aria-haspopup="false">
               <a href="../validation/validation.html">Validation</a>
             </li>
-            <li role="menuitem" aria-haspopup="false" class="active-page">
+            <li role="menuitem" aria-haspopup="false">
               <a href="../index.html">Page d'accueil</a>
             </li>
-            <li role="menuitem" aria-haspopup="false">
+            <li role="menuitem" aria-haspopup="false" class="active-page">
               <a href="../page-a-propos/a-propos.html">A propos de nous</a>
             </li>
             <li role="menuitem" aria-haspopup="false">
@@ -54,22 +54,27 @@
               >
             </li>
             <li role="menu" id="produits-menuitem" aria-haspopup="true">
-              <a href="">Nos produits <span style="font-size: 12px; margin-left: 3px;">&#x25BC</span></a>
+              <a href=""
+                >Nos produits
+                <span style="font-size: 12px; margin-left: 3px"
+                  >&#x25BC;</span
+                ></a
+              >
               <ul role="menu" id="menu-produits">
                 <li role="menuitem" aria-haspopup="false">
                   <a href="../page-produit/produit.html">Tous nos produits</a>
                 </li>
                 <li role="menuitem" aria-haspopup="false">
-                  <a href="">Livres</a>
+                  <a href="#">Livres</a>
                 </li>
                 <li role="menuitem" aria-haspopup="false">
-                  <a href="">Vêtements</a>
+                  <a href="#">Vêtements</a>
                 </li>
                 <li role="menuitem" aria-haspopup="false">
-                  <a href="">Jouets</a>
+                  <a href="#">Jouets</a>
                 </li>
                 <li role="menuitem" aria-haspopup="false">
-                  <a href="">Accessoires</a>
+                  <a href="#">Accessoires</a>
                 </li>
               </ul>
             </li>
@@ -83,10 +88,10 @@
         <h1>Un second tour de jeux</h1>
       </div>
       <div id="header-second-menu">
-        <a role="menuitem" aria-haspopup="false" id="logo-mon-panier" href="">
+        <a role="menuitem" aria-haspopup="false" id="logo-mon-panier" href="#">
           <img src="../image/Icon/mon-panier.svg" alt="Panier" />
         </a>
-        <a role="menuitem" aria-haspopup="false" id="logo-profil" href="">
+        <a role="menuitem" aria-haspopup="false" id="logo-profil" href="#">
           <img src="../image/Icon/profil.svg" alt="Profil" />
         </a>
       </div>
@@ -94,20 +99,19 @@
     <main>
       <h2>A propos de nous</h2>
       <div id="main-a-propos">
-      <article>
-        <section>
-          <h3>Notre équipe</h3>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
-            tempore laudantium temporibus voluptate quos hic labore nemo.
-            Doloribus expedita reprehenderit, nobis earum nostrum maiores ullam,
-            molestiae, corrupti cumque laboriosam nesciunt.
-          </p>
-        </section>
-        <section>
-          <h3>Notre objectif environnemental</h3>
-          <div id="texte-environement">
-            <img src="../image/Icon/environment.svg" alt="Logo environment" />
+        <article>
+          <section>
+            <h3>Notre équipe</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br />
+              Aspernatur tempore laudantium temporibus voluptate quos hic labore
+              nemo.<br />
+              Doloribus expedita reprehenderit, nobis earum nostrum maiores
+              ullam, molestiae, corrupti cumque laboriosam nesciunt.
+            </p>
+          </section>
+          <section>
+            <h3>Notre objectif environnemental</h3>
             <p>
               Recycler les jouets et les livres de cette manière permet de leur
               donner une seconde vie et éviter ainsi la consommation de
@@ -115,35 +119,36 @@
               En plus de cela, nous nous engageons à planter un arbre pour
               chaque commande.
             </p>
+          </section>
+        </article>
+        <article>
+          <h3>Nous sommes parents, on fait de notre mieux!</h3>
+          <div id="conteneur-iframe">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/OJzH-nPeaCw?si=fXghNYw4PmIfUsW8"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
           </div>
-        </section>
-      </article>
-      <article>
-        <h3>Nous sommes parents, on fait de notre mieux!</h3>
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/OJzH-nPeaCw?si=fXghNYw4PmIfUsW8"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
-      </article>
-    </div>
+        </article>
+      </div>
     </main>
     <footer>
       <div id="footer-nous-contacter">
         <h3>Nous contacter :</h3>
         <div id="contact-info">
-            <p>unSecondTourDeJeux@gmail.com</p>
-            <a href="https://www.facebook.com/" target="_blank">
-              <img src="../image/Icon/facebook.svg" alt="Facebook" />
-            </a>
-            <a href="https://www.instagram.com/" target="_blank">
-              <img src="../image/Icon/instagram.svg" alt="Instagram" />
-            </a>
+          <p>unSecondTourDeJeux@gmail.com</p>
+          <a href="https://www.facebook.com/" target="_blank">
+            <img src="../image/Icon/facebook.svg" alt="Facebook" />
+          </a>
+          <a href="https://www.instagram.com/" target="_blank">
+            <img src="../image/Icon/instagram.svg" alt="Instagram" />
+          </a>
         </div>
       </div>
       <p>© 2024 Camille Breau</p>
