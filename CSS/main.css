@@ -19,6 +19,15 @@ main h3 {
   font-size: 20px;
 }
 
+main li {
+  list-style: none;
+}
+
+main a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
 main button {
   width: 150px;
   padding: 8px 15px 8px 15px;
@@ -28,7 +37,7 @@ main button {
   margin: 10px 0;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 720px) {
   h2 {
     font-size: 25px;
   }
@@ -41,94 +50,44 @@ main button {
   }
 }
 
-#accueil-main-info p {
-  margin: 10px 0;
+/* ***Accueil*** */
+#main-accueil {
+  padding: 0;
 }
 
-/* ***Accueil*** */
-
-#main-accueil {
-  width: 100%;
+#banniere {
   display: flex;
-  flex-wrap: wrap;
+  width: 100%;
   justify-content: center;
 }
 
-#accueil-main-info {
-  width: 50%;
+#banniere-left,
+#banniere-right,
+#banniere-middle {
+  max-width: 500px;
+}
+#banniere-left img,
+#banniere-right img,
+#banniere-middle img {
+  width: 100%;
+}
+
+@media screen and (max-width: 720px) {
+  #banniere-right {
+    display: none;
+  }
+}
+
+#content-accueil {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   text-align: center;
 }
 
-#accueil-main-info p {
-  margin: 10px 0;
-}
-
-#profil-option-connexion {
-  width: fit-content;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 30px 0px;
-  padding: 20px;
-  border: thick double var(--second-color);
-}
-
-#connexion {
-  background-color: var(--functionality-first-color);
-  color: var(--background-color);
-  border: solid 2px var(--functionality-first-color);
-}
-
-#connexion:hover {
-  background-color: var(--background-color);
-  color: var(--functionality-first-color);
-}
-
-#inscription {
-  background-color: var(--functionality-second-color);
-  color: var(--background-color);
-  border: solid 2px var(--functionality-second-color);
-}
-
-#inscription:hover {
-  background-color: var(--background-color);
-  color: var(--functionality-second-color);
-}
-
-#profil-option-connexion a {
-  margin-top: 10px;
-  color: var(--primary-color);
-  text-decoration: none;
-}
-
-#accueil-main-image {
-  width: 50%;
-  max-width: 800px;
-  min-width: 500px;
-  display: flex;
-  align-items: center;
-  padding: 20px;
-}
-
-#main-accueil img {
-  width: 100%;
-  object-fit: cover;
-  border-radius: 50px;
-}
-
-@media screen and (max-width: 500px) {
-  #accueil-main-image {
-    padding: 10px;
-    min-width: 350px;
-  }
-
-  #profil-option-connexion a {
-    font-size: 15px;
-  }
+#content-accueil p {
+  margin: 20px 15px;
 }
 
 /* ***A propos*** */
@@ -136,19 +95,38 @@ main button {
 #main-a-propos {
   width: 100%;
   display: flex;
-  flex-direction: column;
-  text-align: center;
+  flex-wrap: wrap;
 }
 
 #main-a-propos article {
-  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
-#main-a-propos article h3 {
+#main-a-propos article ul li a:hover {
+  text-decoration: underline;
+  font-weight: bolder;
+}
+
+#main-a-propos article ul {
+  margin-top: 20px;
+}
+
+#main-a-propos article ul li {
+  margin: 10px 0;
+}
+
+#a-propos-content {
+  margin: 20px;
+}
+
+#a-propos-content h3 {
   margin: 20px 0;
+}
+
+#a-propos-content p {
+  text-align: justify;
+  margin-bottom: 5px;
 }
 
 #conteneur-iframe {
@@ -156,7 +134,6 @@ main button {
   max-width: 600px;
   min-width: 300px;
 }
-
 iframe {
   width: 100%;
 }
@@ -186,7 +163,8 @@ input {
   margin: 10px;
 }
 
-textarea {
+textarea,
+select {
   display: block;
   margin: 10px;
 }
@@ -287,6 +265,13 @@ textarea::placeholder {
   box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 }
 
+.image-produit img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px 10px 0px 0px;
+}
+
 .description-produit {
   width: 200px;
   margin: 0px 0px 10px 25px;
@@ -295,8 +280,6 @@ textarea::placeholder {
 .description-produit p {
   font-size: small;
   text-align: justify;
-  margin: 0px;
-  /* Permet de supprimer les marges par défaut. */
 }
 
 .description-produit p:last-child {
@@ -319,3 +302,5 @@ textarea::placeholder {
   width: 60px;
   border: 1px solid var(--primary-color);
 }
+
+/* ***VALIDATION*** */

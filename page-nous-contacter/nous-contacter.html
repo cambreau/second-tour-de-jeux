@@ -103,7 +103,7 @@
           <p>
             Vous pouvez nous contacter en complétant le formulaire ci-dessous :
           </p>
-          <form action="nous-contacter.html" method="get">
+          <form action="nous-contacter.html" method="post">
             <div id="nom-prenom">
               <label for="nom">Nom :</label>
               <input
@@ -138,6 +138,13 @@
               placeholder="ex: 514-999-9999"
               pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
             />
+            <label for="sujet">Sujet :</label>
+            <select id="sujet" name="sujet" required>
+              <option value="" disabled selected>Sélectionnez un sujet</option>
+              <option value="general">Renseignements généraux</option>
+              <option value="produits">Un problème avec une commande</option>
+              <option value="support">Support technique</option>
+            </select>
             <label for="message">Message :</label>
             <textarea
               id="message"

@@ -35,90 +35,15 @@ body {
   flex-direction: column;
 }
 
-/* ***MAIN*** */
+/* ***VALIDATION*** */
 
-/* ***Page nous contacter*** */
-
-/* ***Produits*** */
-
-#main-produit {
-  width: 100%;
-  text-align: center;
-}
-
-#produits {
-  width: 100%;
+#main-validation {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
 }
-
-.produit {
-  width: 220px;
-  border: 1px solid var(--second-color);
-  border-radius: 10px;
-  margin: 20px;
-}
-
-.produit h3 {
-  font-family: var(--decorative-font);
-  color: var(--primary-color);
-  font-size: 1.5rem;
-  text-align: center;
-  margin: 10px 0px;
-}
-
-.image-produit {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  margin: 10px 10px 0px 10px;
-  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-}
-
-.image-produit img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 10px 10px 0px 0px;
-}
-
-.description-produit {
-  width: 200px;
-  margin: 0px 0px 10px 25px;
-}
-
-.description-produit p {
-  font-size: small;
-  text-align: justify;
-  margin: 0px;
-  /* Permet de supprimer les marges par défaut. */
-}
-
-.description-produit p:last-child {
-  color: var(--primary-color);
-}
-
-.bouton {
-  display: flex;
-  justify-content: center;
-}
-
-.bouton img {
-  width: 40px;
-  height: auto;
-  border-radius: 50%;
-  margin: 0 5px 0 5px;
-}
-
-.bouton a :hover {
-  width: 60px;
-  border: 1px solid var(--primary-color);
-}
-
-/* ***VALIDATION*** */
-
 #main-validation img {
-  width: 500px;
-  height: auto;
+  width: 400px;
+  height: 200px;
 }

@@ -185,6 +185,14 @@ header h1 {
   header h1 {
     font-size: 1.2rem;
   }
+  header {
+    position: relative;
+  }
+  #title {
+    width: 100%;
+    position: relative;
+    left: -50px;
+  }
   #header-second-menu {
     display: none;
   }

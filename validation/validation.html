@@ -21,71 +21,130 @@
 
   <body>
     <header>
-      <nav aria-label="Menu naviguation principal">
-        <ul role="menu">
-          <li role="menuitem"><a href="../index.html">Page d'accueil</a></li>
-          <li role="menuitem">
-            <a href="../page-a-propos/a-propos.html">A propos de nous</a>
-          </li>
-          <li role="menuitem">
-            <a href="../page-produit/produit.html">Nos produits</a>
-          </li>
-          <li role="menuitem">
-            <a href="../page-nous-contacter/nous-contacter.html"
-              >Nous contacter</a
+      <div id="menu-drop-down">
+        <nav aria-label="Menu naviguation principal">
+          <div id="menu-logo">
+            <img src="../image/Icon/menu.svg" alt="Menu" id="menu" />
+          </div>
+          <ul role="menu" id="menu-principal">
+            <li
+              role="menuitem"
+              aria-haspopup="false"
+              class="menu-item-responsive"
             >
-          </li>
-        </ul>
-      </nav>
+              <a href="#">
+                <img src="../image/Icon/profil.svg" alt="Profil" />
+              </a>
+            </li>
+            <li
+              role="menuitem"
+              aria-haspopup="false"
+              class="menu-item-responsive"
+            >
+              <a href="#">
+                <img src="../image/Icon/mon-panier.svg" alt="Panier" />
+              </a>
+            </li>
+            <li role="menuitem" aria-haspopup="false" class="active-page">
+              <a href="../validation/validation.html">Validation</a>
+            </li>
+            <li role="menuitem" aria-haspopup="false">
+              <a href="../index.html">Page d'accueil</a>
+            </li>
+            <li role="menuitem" aria-haspopup="false">
+              <a href="../page-a-propos/a-propos.html">A propos de nous</a>
+            </li>
+            <li role="menuitem" aria-haspopup="false">
+              <a href="../page-nous-contacter/nous-contacter.html"
+                >Nous contacter</a
+              >
+            </li>
+            <li role="menu" id="produits-menuitem" aria-haspopup="true">
+              <a href=""
+                >Nos produits
+                <span style="font-size: 12px; margin-left: 3px"
+                  >&#x25BC;</span
+                ></a
+              >
+              <ul role="menu" id="menu-produits">
+                <li role="menuitem" aria-haspopup="false">
+                  <a href="../page-produit/produit.html">Tous nos produits</a>
+                </li>
+                <li role="menuitem" aria-haspopup="false">
+                  <a href="#">Livres</a>
+                </li>
+                <li role="menuitem" aria-haspopup="false">
+                  <a href="#">Vêtements</a>
+                </li>
+                <li role="menuitem" aria-haspopup="false">
+                  <a href="#">Jouets</a>
+                </li>
+                <li role="menuitem" aria-haspopup="false">
+                  <a href="#">Accessoires</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
       <div id="title">
         <div id="logo">
-          <img src="../image/logo.svg" alt="Logo de l'entreprise" />
+          <img src="../image/Icon/logo.svg" alt="Logo de l'entreprise" />
         </div>
         <h1>Un second tour de jeux</h1>
       </div>
-      <a href="validation.html" id="bouton-validation"> Validation</a>
+      <div id="header-second-menu">
+        <a role="menuitem" aria-haspopup="false" id="logo-mon-panier" href="#">
+          <img src="../image/Icon/mon-panier.svg" alt="Panier" />
+        </a>
+        <a role="menuitem" aria-haspopup="false" id="logo-profil" href="#">
+          <img src="../image/Icon/profil.svg" alt="Profil" />
+        </a>
+      </div>
     </header>
-    <main id="main-validation">
+    <main>
       <h2>Validation</h2>
-      <section>
-        <h3>Index</h3>
-        <img src="../image/validation-index.png" alt="Index" />
-      </section>
-      <section>
-        <h3>A propos</h3>
-        <img src="../image/validation-a-propos.png" alt="A propos" />
-      </section>
-      <section>
-        <h3>Nous contacter</h3>
-        <img src="../image/validation-contact.png" alt="Nous contacter" />
-      </section>
-      <section>
-        <h3>Produits</h3>
-        <img src="../image/validation-produits.png" alt="Produits" />
-      </section>
-      <section>
-        <h3>Validation</h3>
-        <img src="../image/validation.png" alt="Validation" />
-      </section>
-      <section>
-        <h3>CSS</h3>
-        <img src="../image/CSS.png" alt="CSS" />
-      </section>
+      <div id="main-validation">
+        <section>
+          <h3>Index</h3>
+          <img src="../image/validation-index.png" alt="Index" />
+        </section>
+        <section>
+          <h3>A propos</h3>
+          <img src="../image/validation-a-propos.png" alt="A propos" />
+        </section>
+        <section>
+          <h3>Nous contacter</h3>
+          <img src="../image/validation-contact.png" alt="Nous contacter" />
+        </section>
+        <section>
+          <h3>Produits</h3>
+          <img src="../image/validation-produits.png" alt="Produits" />
+        </section>
+        <section>
+          <h3>Validation</h3>
+          <img src="../image/validation.png" alt="Validation" />
+        </section>
+        <section>
+          <h3>CSS</h3>
+          <img src="../image/CSS.png" alt="CSS" />
+        </section>
+      </div>
     </main>
     <footer>
-      <h3>Nous contacter :</h3>
-      <div id="container-footer">
+      <div id="footer-nous-contacter">
+        <h3>Nous contacter :</h3>
         <div id="contact-info">
           <p>unSecondTourDeJeux@gmail.com</p>
           <a href="https://www.facebook.com/" target="_blank">
-            <img src="../image/facebook.svg" alt="Facebook" />
+            <img src="../image/Icon/facebook.svg" alt="Facebook" />
           </a>
           <a href="https://www.instagram.com/" target="_blank">
-            <img src="../image/instagram.svg" alt="Instagram" />
+            <img src="../image/Icon/instagram.svg" alt="Instagram" />
           </a>
         </div>
-        <p>© 2024 Camille Breau</p>
       </div>
+      <p>© 2024 Camille Breau</p>
     </footer>
   </body>
 </html>
